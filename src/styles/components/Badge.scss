@@ -1,0 +1,40 @@
+.badge {
+  border-radius: 8px;
+  background-color: white;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 2em;
+}
+
+.badge__header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  background-color: #222222;
+}
+
+.badge__avatar {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.badge__section-name {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.badge__section-info {
+  padding: 0 2em;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ebebeb;
+  text-align: center;
+}
