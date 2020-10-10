@@ -1,0 +1,21 @@
+.navbar {
+  width: 100%;
+  background-color: #113033;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 2em;
+  box-sizing: border-box;
+}
+
+.navbar__hero {
+  background-color: #051527;
+  width: 100%;
+  height: 36vh;
+}
+
+.navbar__hero--image {
+  width: 100%;
+  height: 36vh;
+  object-fit: cover;
+}
