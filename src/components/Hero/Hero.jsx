@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/components/Hero.scss";
-import Stars from "../images/stars.svg";
+import "./Hero.scss";
+import Stars from "../../images/stars.svg";
 
 const Hero = () => (
   <div className="hero">

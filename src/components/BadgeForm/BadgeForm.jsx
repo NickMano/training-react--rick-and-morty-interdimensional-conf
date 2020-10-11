@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/components/BadgeForm.scss";
+import "./BadgeForm.scss";
 
 const BadgeForm = (props) => {
   const handleSubmit = e => {

@@ -1,8 +1,8 @@
 import React, {useState} from "react";
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import Badge from "../components/Badge";
-import BadgeForm from "../components/BadgeForm";
+import Navbar from "../components/Navbar/Navbar";
+import Hero from "../components/Hero/Hero";
+import Badge from "../components/Badge/Badge";
+import BadgeForm from "../components/BadgeForm/BadgeForm";
 
 const BadgeNew = () => {
   const [form, setForm] = useState({

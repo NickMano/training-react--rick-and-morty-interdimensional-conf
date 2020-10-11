@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/components/Badge.scss";
-import confLogo from "../images/badge-header.svg";
+import "./Badge.scss";
+import confLogo from "../../images/badge-header.svg";
 
 const Badge = (props) => {
   const { firstName, lastName, jobTitle, twitter } = props;
