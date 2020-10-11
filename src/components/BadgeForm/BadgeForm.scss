@@ -6,7 +6,11 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 2em 0;
+  margin: 2em 0 2em;
+
+  @include for-size(l) {
+    margin: 0 0 2em;
+  }
 }
 
 .badge-form {
