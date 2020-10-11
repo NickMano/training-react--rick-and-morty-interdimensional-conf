@@ -2,7 +2,8 @@
 
 $font-primary: "Nunito", sans-serif;
 
-$font-size-small: 20px;
+$font-size-extra-small: 20px;
+$font-size-small: 24px;
 $font-size-medium: 30px;
 $font-size-large: 35px;
 $font-size-extra-large: 50px;
@@ -48,7 +49,7 @@ h3 {
 h4 {
   color: $color-black;
   font-family: $font-primary;
-  font-size: $font-size-medium;
+  font-size: $font-size-small;
   font-weight: 300;
   line-height: 1.5;
 
@@ -60,14 +61,14 @@ h4 {
 h5 {
   color: $color-black;
   font-family: $font-primary;
-  font-size: $font-size-medium;
+  font-size: $font-size-small;
   font-weight: 300;
 }
 
 p {
   color: $color-black;
   font-family: $font-primary;
-  font-size: $font-size-small;
+  font-size: $font-size-extra-small;
   line-height: 1.5;
   margin: 0;
 

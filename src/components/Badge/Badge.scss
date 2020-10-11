@@ -24,6 +24,8 @@
 
   & img {
     object-fit: contain;
+    padding: 8px 0;
+    box-sizing: border-box;
   }
 }
 
