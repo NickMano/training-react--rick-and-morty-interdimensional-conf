@@ -1,15 +1,10 @@
-import React, {useState} from "react";
+import React from "react";
 import "../styles/components/BadgeForm.scss";
 
 const BadgeForm = (props) => {
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [mail, setMail] = useState('');
-  const [jobTitle, setJobTitle] = useState('');
-  const [twitter, setTwitter] = useState('');
-
   const handleSubmit = e => {
     e.preventDefault();
+    console.log(props.form);
   }
 
   return (
@@ -18,38 +13,38 @@ const BadgeForm = (props) => {
       <form onSubmit={handleSubmit} className="badge-form">
         <label>First Name</label>
         <input 
-          onChange={e => setFirstName(e.target.value)} 
+          onChange={props.handleChange} 
           type="text" 
           name="firstName" 
-          value={firstName} 
+          value={props.form.firstName} 
         />
         <label>Last Name</label>
         <input 
-          onChange={e => setLastName(e.target.value)} 
+          onChange={props.handleChange} 
           type="text" 
           name='lastName' 
-          value={lastName} 
+          value={props.form.lastName} 
         />
         <label>Mail</label>
         <input 
-          onChange={e => setMail(e.target.value)} 
+          onChange={props.handleChange} 
           type="email" 
           name='mail' 
-          value={mail}
+          value={props.form.mail}
         />
         <label>Job Title</label>
         <input 
-          onChange={e => setJobTitle(e.target.value)} 
+          onChange={props.handleChange} 
           type="text" 
           name='jobTitle' 
-          value={jobTitle}
+          value={props.form.jobTitle}
         />
         <label>Twitter</label>
         <input 
-          onChange={e => setTwitter(e.target.value)} 
+          onChange={props.handleChange} 
           type="text" 
           name='twitter' 
-          value={twitter}  
+          value={props.form.twitter}  
         />
         <button>Save</button>
       </form>
