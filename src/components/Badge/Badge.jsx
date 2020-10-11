@@ -1,6 +1,6 @@
 import React from "react";
 import "./Badge.scss";
-import confLogo from "../../images/badge-header.svg";
+import confLogo from "../../images/badge-header.png";
 
 const Badge = (props) => {
   const { firstName, lastName, jobTitle, twitter } = props;
@@ -21,10 +21,10 @@ const Badge = (props) => {
         </h1>
       </div>
       <div className="badge__section-info">
-        <h4>{jobTitle}</h4>
-        <p>@{twitter}</p>
+        <h5>{jobTitle}</h5>
+        <p className="p--twitter">@{twitter}</p>
       </div>
-      <p>#PlatziConf</p>
+      <p className='p--gray'>#InterConf</p>
     </div>
   );
 };

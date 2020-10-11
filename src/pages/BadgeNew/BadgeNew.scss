@@ -1,0 +1,19 @@
+@import "../../styles/base.scss";
+
+.BadgeNew {
+  &__badge {
+    grid-column: 1/-1;
+
+    @include for-size(m) {
+      grid-column: 1/5;
+    }
+  }
+
+  &__badgeForm {
+    grid-column: 1/-1;
+
+    @include for-size(m) {
+      grid-column: 7/-1;
+    }
+  }
+}

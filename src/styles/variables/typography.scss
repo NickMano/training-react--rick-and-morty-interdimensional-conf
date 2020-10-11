@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+$font-primary: "Nunito", sans-serif;
+
+$font-size-small: 20px;
+$font-size-medium: 30px;
+$font-size-large: 35px;
+$font-size-extra-large: 50px;
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+h1 {
+  color: $color-black;
+  font-family: $font-primary;
+  font-size: $font-size-extra-large;
+  font-weight: 300;
+
+  @include for-size(m) {
+    font-size: $font-size-extra-large;
+  }
+}
+
+h2 {
+  color: $color-black;
+  font-family: $font-primary;
+  font-size: $font-size-medium;
+  font-weight: 300;
+}
+
+h3 {
+  color: $color-black;
+  font-family: $font-primary;
+  font-size: $font-size-large;
+  font-weight: 300;
+  line-height: 1.5;
+
+  &.h3--primary {
+    color: $color-primary;
+  }
+}
+
+h4 {
+  color: $color-black;
+  font-family: $font-primary;
+  font-size: $font-size-medium;
+  font-weight: 300;
+  line-height: 1.5;
+
+  &.h4--white {
+    color: $color-white;
+  }
+}
+
+h5 {
+  color: $color-black;
+  font-family: $font-primary;
+  font-size: $font-size-medium;
+  font-weight: 300;
+}
+
+p {
+  color: $color-black;
+  font-family: $font-primary;
+  font-size: $font-size-small;
+  line-height: 1.5;
+  margin: 0;
+
+  &.p--light {
+    color: $color-white;
+  }
+
+  &.p--gray {
+    color: $color-gray;
+  }
+
+  &.p--twitter {
+    color: $color-twitter;
+  }
+}

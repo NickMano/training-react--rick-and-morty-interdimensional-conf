@@ -1,0 +1,9 @@
+@import "./variables/colors-theme";
+@import "./variables/layout";
+@import "./variables/typography";
+
+body {
+  background-color: $color-white;
+  margin: 0;
+  padding: 0;
+}
