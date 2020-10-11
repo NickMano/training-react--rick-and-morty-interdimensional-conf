@@ -1,0 +1,9 @@
+@import "../../styles/base.scss";
+
+.BadgeList {
+  & > * {
+    margin-top: 2em;
+  }
+
+  margin-bottom: 2em;
+}

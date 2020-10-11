@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import BadgeNew from "./pages/BadgeNew";
+import BadgeNew from "./pages/BadgeNew/BadgeNew";
+import Badges from "./pages/Badges/Badges";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BadgeNew />
+    <Badges />
   </React.StrictMode>,
   document.getElementById("root")
 );

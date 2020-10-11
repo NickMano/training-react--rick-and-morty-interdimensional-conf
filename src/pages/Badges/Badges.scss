@@ -1,0 +1,24 @@
+@import "../../styles/base.scss";
+
+.Badges {
+  &__button {
+    grid-column: 4/-1;
+    justify-self: end;
+
+    @include for-size(m) {
+      grid-column: 9/10;
+    }
+  }
+
+  &__badgeList {
+    grid-column: 1/-1;
+
+    @include for-size(m) {
+      grid-column: 3/11;
+    }
+
+    @include for-size(l) {
+      grid-column: 4/10;
+    }
+  }
+}
