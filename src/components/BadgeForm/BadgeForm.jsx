@@ -8,7 +8,6 @@ const BadgeForm = (props) => {
   }
 
   return (
-    <div className='badge-form__container'>
       <form onSubmit={handleSubmit} className="badge-form">
         <h2>NEW ATTENDANT</h2>
         <hr />
@@ -47,9 +46,8 @@ const BadgeForm = (props) => {
           name='twitter' 
           value={props.form.twitter}  
         />
-        <button className="btn--primary">Save</button>
+        <button className="btn btn--terciary">Save</button>
       </form>
-    </div>
   );
 };
 

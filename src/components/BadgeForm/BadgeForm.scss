@@ -1,30 +1,30 @@
 @import "../../styles/base.scss";
 
-.badge-form__container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 2em 0 2em;
-
-  @include for-size(l) {
-    margin: 0 0 2em;
-  }
-}
-
 .badge-form {
   padding: 2em;
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   box-sizing: border-box;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   background-color: $color-white;
-}
+  margin-bottom: 2em;
 
-.badge-form input {
-  margin: 0.4em 0 1.2em;
-  height: 28px;
+  & hr {
+    width: 86%;
+    margin: 2em 0;
+    border-color: $color-terciary;
+  }
+
+  & input {
+    margin: 0.4em 0 1.2em;
+    height: 28px;
+    width: 86%;
+  }
+
+  & button {
+    width: 86%;
+  }
 }
