@@ -9,8 +9,9 @@ const BadgeForm = (props) => {
 
   return (
     <div className='badge-form__container'>
-      <h1>NEW ATTENDANT</h1>
       <form onSubmit={handleSubmit} className="badge-form">
+        <h2>NEW ATTENDANT</h2>
+        <hr />
         <label>First Name</label>
         <input 
           onChange={props.handleChange} 

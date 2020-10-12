@@ -21,7 +21,13 @@
     }
 
     @include for-size(l) {
-      grid-column: 7/-1;
+      grid-column: 8/-1;
+    }
+  }
+
+  &__grid {
+    @include for-size(l) {
+      margin-top: -2.8em !important;
     }
   }
 }

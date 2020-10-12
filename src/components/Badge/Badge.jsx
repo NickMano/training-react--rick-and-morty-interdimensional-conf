@@ -12,13 +12,13 @@ const Badge = (props) => {
       <div className="badge__section-name">
         <img
           className="badge__avatar"
-          src="https://en.gravatar.com/avatar?d=identicon"
+          src="https://i.pinimg.com/originals/6e/51/32/6e5132a90812ad1abf3711135a5cf406.png"
           alt="Avatar"
         />
-        <h1>
+        <h2>
           {firstName} <br />
           {lastName}
-        </h1>
+        </h2>
       </div>
       <div className="badge__section-info">
         <h5>{jobTitle}</h5>
