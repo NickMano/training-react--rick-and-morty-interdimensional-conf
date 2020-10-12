@@ -46,7 +46,7 @@ const BadgeForm = (props) => {
           name='twitter' 
           value={props.form.twitter}  
         />
-        <button>Save</button>
+        <button className="btn--primary">Save</button>
       </form>
     </div>
   );
