@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import './BadgeNew.scss'
-import Navbar from "../../components/Navbar/Navbar";
 import Hero from "../../components/Hero/Hero";
 import Badge from "../../components/Badge/Badge";
 import BadgeForm from "../../components/BadgeForm/BadgeForm";
@@ -25,7 +24,6 @@ const BadgeNew = () => {
 
   return (
     <>
-      <Navbar />
       <Hero />
       <div className={`${cssClassName}__grid grid`}>
         <div className={`${cssClassName}__badge`}>

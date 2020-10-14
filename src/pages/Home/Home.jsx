@@ -1,6 +1,5 @@
 import React from "react";
 import './Home.scss'
-import Navbar from "../../components/Navbar/Navbar";
 import RickImage from "../../images/rick.png"
 import { Link } from "react-router-dom";
 
@@ -9,7 +8,6 @@ const Home = () => {
 
     return(
     <>
-     <Navbar />
      <div className={`${cssClassName}__background`}>
         <div className="grid">
             <div className={`${cssClassName}__decoration`}>

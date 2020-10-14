@@ -1,6 +1,5 @@
 import React from "react";
 import './Badges.scss'
-import Navbar from "../../components/Navbar/Navbar";
 import Hero from "../../components/Hero/Hero";
 import BadgeList from "../../components/BadgeList/BadgeList";
 import { Link } from "react-router-dom";
@@ -40,7 +39,6 @@ const Badges = () => {
   
   return (
     <>
-      <Navbar />
       <Hero />
       <div className="grid">
         <div className={`${cssClassName}__button`}>

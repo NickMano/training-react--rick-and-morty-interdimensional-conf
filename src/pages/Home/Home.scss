@@ -3,10 +3,11 @@
 .home {
   &__background {
     background-image: url("https://i.pinimg.com/originals/cc/4e/01/cc4e012fc8d96cbe52d99dd863743823.jpg");
-    object-fit: cover;
+    background-size: cover;
     min-width: 100vw;
     min-height: calc(100vh - 52px);
     padding-top: 2em;
+    background-position: center;
     box-sizing: border-box;
 
     @include for-size(l) {
