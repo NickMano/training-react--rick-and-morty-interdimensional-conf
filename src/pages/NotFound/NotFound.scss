@@ -1,0 +1,9 @@
+@import "../../styles/base.scss";
+
+.not-found__image {
+  background-image: url("https://i.imgur.com/vdU2Jlg.png");
+  min-width: 100vw;
+  min-height: calc(100vh - 52px);
+  background-size: cover;
+  background-position: center top;
+}

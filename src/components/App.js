@@ -4,6 +4,7 @@ import Badges from '../pages/Badges/Badges';
 import BadgeNew from '../pages/BadgeNew/BadgeNew';
 import Home from '../pages/Home/Home';
 import Layout from './Layout';
+import NotFound from '../pages/NotFound/NotFound';
 
 const App = () => (
     <BrowserRouter>
@@ -12,6 +13,7 @@ const App = () => (
                 <Route exact path="/" component={Home} />
                 <Route exact path="/badges" component={Badges} />
                 <Route exact path="/badges/new" component={BadgeNew} />
+                <Route component={NotFound} />
             </Switch>
         </Layout>
     </BrowserRouter>
