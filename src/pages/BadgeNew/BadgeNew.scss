@@ -3,6 +3,7 @@
 .BadgeNew {
   &__badge {
     grid-column: 1/-1;
+    margin-bottom: 2em;
 
     @include for-size(m) {
       grid-column: 3/11;
@@ -27,7 +28,7 @@
 
   &__grid {
     @include for-size(l) {
-      margin-top: -2.8em !important;
+      margin-top: -8em !important;
     }
   }
 }

@@ -6,7 +6,7 @@ $xl: 1440px;
 
 @mixin for-size($size) {
   @if $size == s {
-    @media (max-width: $s) {
+    @media (min-width: $s) {
       @content;
     }
   } @else if $size == m {

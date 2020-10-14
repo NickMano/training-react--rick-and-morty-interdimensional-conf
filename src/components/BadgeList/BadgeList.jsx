@@ -11,6 +11,7 @@ const BadgeList = props => {
       props.badges.map(badge => {
         return(
           <Badge
+            key={badge.id}
             firstName={badge.firstName}
             lastName={badge.lastName}
             jobTitle={badge.jobTitle}
