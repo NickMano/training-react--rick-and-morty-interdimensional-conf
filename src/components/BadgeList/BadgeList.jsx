@@ -1,5 +1,5 @@
 import React from "react";
-import Badge from "../../components/BadgeCompact/BadgeCompact";
+import BadgeCompact from "../../components/BadgeCompact/BadgeCompact";
 import './BadgeList.scss'
 
 const BadgeList = props => {
@@ -10,7 +10,7 @@ const BadgeList = props => {
     {
       props.badges.map(badge => {
         return(
-          <Badge
+          <BadgeCompact
             key={badge.id}
             firstName={badge.firstName}
             lastName={badge.lastName}

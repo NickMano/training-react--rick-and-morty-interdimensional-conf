@@ -25,4 +25,7 @@ body {
   &--terciary {
     background-color: $color-terciary;
   }
+  &--full-width {
+    width: 100%;
+  }
 }
