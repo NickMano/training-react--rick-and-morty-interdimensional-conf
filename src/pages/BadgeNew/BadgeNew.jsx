@@ -28,10 +28,10 @@ const BadgeNew = () => {
       <div className={`${cssClassName}__grid grid`}>
         <div className={`${cssClassName}__badge`}>
           <Badge
-            firstName={form.firstName ? form.firstName : "Rick"}
-            lastName={form.lastName ? form.lastName : "Sanchez"}
-            jobTitle={form.jobTitle ? form.jobTitle : "Viajero interdimensional"}
-            twitter={form.twitter ? form.twitter : "RickSanchez_C137_ok"}
+            firstName={form.firstName || "Rick"}
+            lastName={form.lastName || "Sanchez"}
+            jobTitle={form.jobTitle || "Viajero interdimensional"}
+            twitter={form.twitter || "RickSanchez_C137_ok"}
           />
         </div>
         <div className={`${cssClassName}__badgeForm`}>

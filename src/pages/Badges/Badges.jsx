@@ -29,7 +29,7 @@ const Badges = () => {
       <Hero />
       <div className="grid">
         <div className={`${cssClassName}__button`}>
-            <Link to="badges/new" className="btn btn--primary">Add</Link>
+            <Link to="/badges/new" className="btn btn--primary">Add</Link>
         </div>
         <div className={`${cssClassName}__badgeList`} >
           <BadgeList badges={characters}/>
