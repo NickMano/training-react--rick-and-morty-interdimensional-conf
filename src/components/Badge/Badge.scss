@@ -13,40 +13,60 @@
   @include for-size(l) {
     margin: 0;
   }
-}
 
-.badge__header {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 80px;
-  background-color: $color-secondary;
+  &__header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background-color: $color-secondary;
 
-  & img {
-    object-fit: contain;
-    padding: 8px 0;
-    box-sizing: border-box;
+    & img {
+      object-fit: contain;
+      padding: 8px 0;
+      box-sizing: border-box;
+    }
   }
-}
 
-.badge__avatar {
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-}
+  &__section-name {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.5em 1.2em;
+    box-sizing: border-box;
 
-.badge__section-name {
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 0.5em 0;
-}
+    &--avatar {
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      margin-right: 2em;
+    }
 
-.badge__section-info {
-  padding: 0.5em 2em;
-  width: 100%;
-  box-sizing: border-box;
-  background-color: #ebebeb;
-  text-align: center;
+    &--name {
+      width: 60%;
+      height: 24px;
+      border-radius: 12px;
+    }
+  }
+
+  &__section-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.5em 2em;
+    width: 100%;
+    min-height: 80px;
+    box-sizing: border-box;
+    background-color: #ebebeb;
+    text-align: center;
+  }
+
+  &__job-title,
+  &__twitter {
+    width: 60%;
+    height: 16px;
+    border-radius: 8px;
+  }
 }

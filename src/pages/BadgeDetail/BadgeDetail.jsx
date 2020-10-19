@@ -27,6 +27,10 @@ const BadgeDetail = props => {
       <Hero />
       <div className={`grid`}>
         <div className={`${cssClassName}__badge`}>
+        {loading 
+        ?
+          <Badge loading/>
+        :
           <Badge
             firstName={character.firstName || "Rick Sanchez"}
             jobTitle={character.jobTitle || "Viajero interdimensional"}
@@ -34,6 +38,8 @@ const BadgeDetail = props => {
             mail={character.mail || ""}
             imageUrl={character.avatarUrl}
           />
+        }
+          
         </div>
         <div className={`${cssClassName}__actions`}>
           <h2>Actions</h2>
