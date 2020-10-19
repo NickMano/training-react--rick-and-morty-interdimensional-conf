@@ -1,6 +1,6 @@
 import React from "react";
 import './Home.scss'
-import RickImage from "../../images/rick.png"
+import RickImage from "../../images/rick.webp"
 import { Link } from "react-router-dom";
 
 const Home = () => {

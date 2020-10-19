@@ -1,6 +1,6 @@
 import React from "react";
 import "./Badge.scss";
-import confLogo from "../../images/badge-header.png";
+import confLogo from "../../images/badge-header.webp";
 import Gravatar from "../Gravatar";
 
 const Badge = (props) => {
