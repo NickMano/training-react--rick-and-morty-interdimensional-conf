@@ -28,8 +28,7 @@ const BadgeDetail = props => {
       <div className={`grid`}>
         <div className={`${cssClassName}__badge`}>
           <Badge
-            firstName={character.firstName || "Rick"}
-            lastName={character.lastName || ""}
+            firstName={character.firstName || "Rick Sanchez"}
             jobTitle={character.jobTitle || "Viajero interdimensional"}
             twitter={character.twitter || "RickSanchez_C137_ok"}
             mail={character.mail || ""}
