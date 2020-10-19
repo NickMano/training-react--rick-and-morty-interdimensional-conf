@@ -15,7 +15,7 @@ const Home = () => {
             </div>
             <div className={`${cssClassName}__check-in`}>
                 <h3 className="h3--white">CHECK IN TO INTERDIMENSIONAL CONFERENCE</h3>
-                <Link to="/badges/new" className="btn btn--primary">Enter</Link>
+                <Link to="/badges/" className="btn btn--primary">Enter</Link>
             </div>
         </div>
      </div>

@@ -32,6 +32,7 @@ const BadgeNew = () => {
             lastName={form.lastName || "Sanchez"}
             jobTitle={form.jobTitle || "Viajero interdimensional"}
             twitter={form.twitter || "RickSanchez_C137_ok"}
+            mail={form.mail || ""}
           />
         </div>
         <div className={`${cssClassName}__badgeForm`}>

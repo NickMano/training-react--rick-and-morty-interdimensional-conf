@@ -13,10 +13,14 @@
     justify-content: flex-start;
   }
 
-  & img {
+  & a {
     height: inherit;
     padding: 8px 0;
     box-sizing: border-box;
+
+    & img {
+      height: 100%;
+    }
 
     @include for-size(m) {
       padding: 8px 1em 8px 2em;

@@ -1,20 +1,17 @@
 import React from "react";
 import "./Badge.scss";
 import confLogo from "../../images/badge-header.png";
+import Gravatar from "../Gravatar";
 
 const Badge = (props) => {
-  const { firstName, lastName, jobTitle, twitter } = props;
+  const { firstName, lastName, jobTitle, twitter, mail } = props;
   return (
     <div className="badge">
       <div className="badge__header">
         <img src={confLogo} alt="logo of component" />
       </div>
       <div className="badge__section-name">
-        <img
-          className="badge__avatar"
-          src="https://i.pinimg.com/originals/6e/51/32/6e5132a90812ad1abf3711135a5cf406.png"
-          alt="Avatar"
-        />
+        <Gravatar className="badge__avatar" mail={mail} />
         <h2>
           {firstName} <br />
           {lastName}
