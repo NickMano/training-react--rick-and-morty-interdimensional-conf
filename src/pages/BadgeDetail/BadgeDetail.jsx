@@ -29,7 +29,7 @@ const BadgeDetail = props => {
         <div className={`${cssClassName}__badge`}>
           <Badge
             firstName={character.firstName || "Rick"}
-            lastName={character.lastName || "Sanchez"}
+            lastName={character.lastName || ""}
             jobTitle={character.jobTitle || "Viajero interdimensional"}
             twitter={character.twitter || "RickSanchez_C137_ok"}
             mail={character.mail || ""}
