@@ -4,14 +4,21 @@ import confLogo from "../../images/badge-header.webp";
 import Gravatar from "../Gravatar";
 
 const Badge = (props) => {
-  const { firstName, lastName, jobTitle, twitter, mail } = props;
+  const { firstName, lastName, jobTitle, twitter, mail, imageUrl } = props;
   return (
     <div className="badge">
       <div className="badge__header">
         <img src={confLogo} alt="logo of component" />
       </div>
       <div className="badge__section-name">
-        <Gravatar className="badge__avatar" mail={mail} />
+        {imageUrl ? 
+          <img
+            className="badge__avatar"
+            src={imageUrl}
+            alt="Avatar"
+          /> 
+        : 
+          <Gravatar className="badge__avatar" mail={mail} />}
         <h2>
           {firstName} <br />
           {lastName}

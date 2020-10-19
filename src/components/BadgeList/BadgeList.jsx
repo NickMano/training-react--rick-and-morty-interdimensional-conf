@@ -4,7 +4,6 @@ import './BadgeList.scss'
 
 const BadgeList = props => {
   const cssClassName = "BadgeList";
-
   return(
    <div className={cssClassName}>
     {
@@ -12,6 +11,7 @@ const BadgeList = props => {
         return(
           <BadgeCompact
             key={badge.id}
+            id={badge.id}
             firstName={badge.firstName}
             lastName={badge.lastName}
             jobTitle={badge.jobTitle}

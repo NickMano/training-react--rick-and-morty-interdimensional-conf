@@ -1,23 +1,11 @@
-const fetchCharacter = async (characters, page) => {
-    const response = await fetch(`https://rickandmortyapi.com/api/character/?page=${page}`);
+import formatCharacters from './formatCharacters'
+
+const fetchCharacter = async (id) => {
+    const response = await fetch(`https://rickandmortyapi.com/api/character/${id}`);
     const data = await response.json()
-    const newCharacters = formatCharacters(data.results)
+    const characters = formatCharacters(data)
 
-    return [].concat(characters, newCharacters)
-}
-
-const formatCharacters = (characters) => {
-return characters.map(character => {
-    return {
-    id:character.id,
-    firstName: character.name,
-    lastName: "",
-    email: `${character.name}@gmail.com`,
-    jobTitle: `${character.type ? `${character.type}  - ` : ''} ${character.gender} - ${character.origin.name}`,
-    twitter: `${character.name}_ok`,
-    avatarUrl: character.image,
-    }
-})
+    return characters
 }
 
 export default fetchCharacter

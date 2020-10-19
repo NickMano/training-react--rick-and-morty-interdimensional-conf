@@ -6,6 +6,10 @@
     justify-self: end;
 
     @include for-size(m) {
+      grid-column: 9/11;
+    }
+
+    @include for-size(l) {
       grid-column: 9/10;
     }
   }

@@ -3,7 +3,7 @@ import './Badges.scss'
 import Hero from "../../components/Hero/Hero";
 import BadgeList from "../../components/BadgeList/BadgeList";
 import { Link } from "react-router-dom";
-import fetchCharacter from "../../components/utils/fetchCharacter";
+import fetchCharacters from "../../components/utils/fetchCharacters";
 import BadgeCompact from "../../components/BadgeCompact/BadgeCompact";
 
 const Badges = () => {
@@ -13,9 +13,9 @@ const Badges = () => {
 
   useEffect( () => {
     setLoading(true);
-    fetchCharacter(characters, page)
+    fetchCharacters(page)
     .then( data => {
-      setCharacters(data)
+      setCharacters([].concat(characters, data))
       setLoading(false)
     }
     )

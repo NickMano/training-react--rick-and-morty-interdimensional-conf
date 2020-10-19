@@ -1,0 +1,26 @@
+@import "../../styles/base.scss";
+
+.BadgeDetail {
+  &__badge {
+    grid-column: 1/-1;
+    margin-bottom: 2em;
+
+    @include for-size(m) {
+      grid-column: 3/8;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    grid-column: 2/4;
+    margin-bottom: 2em;
+
+    @include for-size(m) {
+      grid-column: 9/11;
+    }
+  }
+}
