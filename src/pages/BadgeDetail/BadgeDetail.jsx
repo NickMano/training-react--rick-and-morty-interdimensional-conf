@@ -1,9 +1,11 @@
 import React, {useState, useEffect} from "react";
+import { Link } from "react-router-dom";
 import './BadgeDetail.scss'
+
 import Hero from "../../components/Hero/Hero";
 import Badge from "../../components/Badge/Badge";
 import fetchCharacter from "../../components/utils/fetchCharacter"
-import { Link } from "react-router-dom";
+import DeleteBadgeModal from "../../components/Modal/DeleteBadgeModal";
 
 const BadgeDetail = props => {
   const cssClassName = "BadgeDetail";
@@ -21,6 +23,8 @@ const BadgeDetail = props => {
     )
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <>
@@ -44,7 +48,8 @@ const BadgeDetail = props => {
         <div className={`${cssClassName}__actions`}>
           <h2>Actions</h2>
           <Link className="btn btn--primary btn--full-width">Edit</Link>
-          <Link className="btn btn--terciary btn--full-width">Delete</Link>
+          <button className="btn btn--full-width" onClick={() => setIsOpen(true)}>Delete</button>
+          <DeleteBadgeModal isOpen={isOpen} onClose={() => setIsOpen(false)} history={props.history}/>
         </div>
       </div>
     </>
