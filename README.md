@@ -1,3 +1,9 @@
+![homepage-view](https://i.imgur.com/zM0ZfTo.jpg)
+
+![list-of-characters](https://i.imgur.com/N33D677.png)
+
+![make-your-character](https://i.imgur.com/20BhE7X.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -11,11 +17,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
